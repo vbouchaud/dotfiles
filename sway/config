@@ -1,0 +1,3 @@
+include /home/vianney/.config/sway/config.d/*
+
+include /etc/sway/config.d/*
