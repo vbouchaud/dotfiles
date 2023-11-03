@@ -1,4 +1,7 @@
 /*
 !/.gitignore
+!/user-dirs.dirs
+
 !/sway/
 !/environment.d/
+!/foot/
