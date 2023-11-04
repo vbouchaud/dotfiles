@@ -3,6 +3,8 @@
 !/user-dirs.dirs
 
 !/sway/
+!/mako/
 !/environment.d/
 !/foot/
 !/systemd/
+!/doom/
