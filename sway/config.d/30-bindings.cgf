@@ -183,8 +183,8 @@ bindsym --locked XF86AudioPlay exec playerctl play-pause
 bindsym --locked XF86AudioNext exec playerctl next
 bindsym --locked XF86AudioPrev exec playerctl previous
 
-# search
-bindsym XF86Search exec dmenu_run
+# # search
+# bindsym XF86Search exec dmenu_run
 
 # volume
 bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +1%

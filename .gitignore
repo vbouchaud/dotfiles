@@ -11,5 +11,6 @@
 !/systemd/
 !/doom/
 !/xdg-desktop-portal-wlr/
+!/wofi/
 !/gtk-3.0/
 !/gtk-4.0/

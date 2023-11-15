@@ -1,0 +1,13 @@
+width=30%
+lines=8
+
+term=footclient
+
+insensitive=true
+
+# appear in front of full screen applications
+layer=overlay
+
+# print command instead of exec
+drun-print_command=true
+run-print_command=true

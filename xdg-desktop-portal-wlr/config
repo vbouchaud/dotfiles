@@ -1,5 +1,5 @@
 [screencast]
 chooser_type=dmenu
-chooser_cmd=dmenu
+chooser_cmd=wofi --show dmenu --prompt share
 exec_before=makoctl mode -a do-not-disturb
 exec_after=makoctl mode -r do-not-disturb
