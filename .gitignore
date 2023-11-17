@@ -4,14 +4,14 @@
 
 !/user-dirs.dirs
 
-!/sway/
-!/swaylock/
-!/mako/
+!/doom/
 !/environment.d/
 !/foot/
-!/systemd/
-!/doom/
-!/xdg-desktop-portal-wlr/
-!/wofi/
 !/gtk-3.0/
 !/gtk-4.0/
+!/mako/
+!/sway/
+!/swaylock/
+!/systemd/
+!/wofi/
+!/xdg-desktop-portal-wlr/
