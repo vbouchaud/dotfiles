@@ -202,3 +202,6 @@ bindsym Mod4+Print          exec /usr/share/sway/scripts/grimshot --notify copy 
 bindsym Mod4+Shift+Print    exec /usr/share/sway/scripts/grimshot --notify copy active
 bindsym Mod4+Ctrl+Print     exec /usr/share/sway/scripts/grimshot --notify copy area
 bindsym Mod4+Mod1+Print     exec /usr/share/sway/scripts/grimshot --notify copy window
+
+# lock screen
+bindsym Ctrl+Mod1+l     exec swaylock
