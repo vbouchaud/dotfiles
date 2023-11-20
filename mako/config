@@ -7,5 +7,7 @@ background-color=#072a2eff
 border-color=#2a4546ff
 progress-color=over #2f5429ff
 
+default-timeout=5000
+
 [mode=do-not-disturb]
 invisible=1
