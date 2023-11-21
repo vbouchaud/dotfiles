@@ -1,0 +1,12 @@
+[Unit]
+Description=Clipboard management service
+PartOf=graphical-session.target
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/wl-paste --watch cliphist -max-items 12 store
+Restart=on-failure
+
+[Install]
+WantedBy=graphical-session.target

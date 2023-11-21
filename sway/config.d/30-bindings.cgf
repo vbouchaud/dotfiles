@@ -205,3 +205,13 @@ bindsym Mod4+Mod1+Print     exec /usr/share/sway/scripts/grimshot --notify copy 
 
 # lock screen
 bindsym Ctrl+Mod1+l     exec swaylock
+
+# clipboard management
+## https://git.eisfunke.com/config/nixos/-/commit/d726ba6a3a22d7d7ae445c6ac95b7670c73a451c
+bindsym Mod4+c          exec 'cliphist list \
+      | xargs -d "\n" printf "%q\n" \
+      | wofi --show dmenu -p "Copy..." --pre-display-cmd "echo -n %s | cut -z -f 2" \
+      | xargs -0 -I {} bash -c "echo {}" \
+      | cliphist decode \
+      | wl-copy'
+bindsym Mod4+Ctrl+c     exec cliphist wipe
