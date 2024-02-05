@@ -1,0 +1,9 @@
+[Unit]
+Description=Waybar reloader
+
+[Service]
+Type=oneshot
+ExecStart=%h/.config/waybar/scripts/reload.sh
+
+[Install]
+WantedBy=graphical-session.target
