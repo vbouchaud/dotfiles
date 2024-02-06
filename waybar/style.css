@@ -1,0 +1,80 @@
+/* global configuration  */
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "DejaVu Sans Mono";
+    font-size: 13px;
+    min-height: 0;
+}
+window#waybar {
+    background: transparent;
+    color: #ffffff;
+}
+
+/* workspace configuration */
+#workspaces button {
+    background: transparent;
+    color: rgba(92, 92, 92, 1);
+    padding: 3px 5px 3px 5px;
+    border: 1px solid rgba(42, 69, 70, 0);
+}
+#workspaces button.visible {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(100, 100, 100, 1);
+    border: 1px solid rgba(42, 69, 70, 1);
+}
+#workspaces button.focused {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(7, 42, 46, 1);
+    border: 1px solid rgba(42, 69, 70, 1);
+}
+#workspaces button.urgent {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(150, 0, 0, 1);
+}
+
+/* toolpip configuration */
+tooltip {
+    background-color: rgba(7, 42, 46, 1);
+    border: 1px solid rgba(42, 69, 70, 1);
+}
+tooltip label {
+  color: #ffffff;
+}
+
+/* modules placement and separators */
+#custom-vpn, #network, #cpu, #memory, #clock, #wireplumber, #battery, #tray {
+    padding: 2px 13px;
+}
+#custom-vpn, #network, #cpu, #clock, #wireplumber, #battery {
+    border-right: 1px solid rgba(100, 114, 125, 0.5);
+}
+
+/* Battery */
+#battery {
+    color: white;
+}
+#battery.charging {
+    color: #06D6A0;
+}
+#battery.warning {
+    color: #FFC43D;
+}
+#battery.critical {
+    color: #EF476F;
+}
+/* @keyframes blink { */
+/*     to { */
+/*         background-color: #ffffff; */
+/*         color: black; */
+/*     } */
+/* } */
+/* #battery.warning:not(.charging) { */
+/*     background: #f53c3c; */
+/*     color: white; */
+/*     animation-name: blink; */
+/*     animation-duration: 0.5s; */
+/*     animation-timing-function: linear; */
+/*     animation-iteration-count: infinite; */
+/*     animation-direction: alternate; */
+/* } */

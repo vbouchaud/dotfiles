@@ -1,0 +1,116 @@
+{
+  "modules-left": [
+    "sway/workspaces"
+  ],
+
+  "modules-center": [
+    "sway/window"
+  ],
+
+  "modules-right": [
+    "custom/vpn",
+    "network#wifi",
+    "network#ethernet",
+
+    // "memory",
+    // "cpu",
+
+    "battery",
+    "wireplumber",
+    "clock",
+    "tray"
+  ],
+
+  "sway/window": {
+    "max-length": 50,
+    "toolpip": false
+  },
+
+  "network#wifi": {
+    "interface": "wlp0s20f3",
+    "format": "󰤭",
+    "format-wifi": "{icon}",
+    "format-icons": [
+      "󰤯", "󰤟", "󰤢", "󰤥", "󰤨"
+    ],
+    "format-disconnected": "󰤭",
+    "tooltip-format-wifi": "{ipaddr}/{cidr} on {ifname} {essid} ({signalStrength}%)",
+    "tooltip-format-disconnected": "Disconnected",
+    "max-length": 50,
+    "on-click": "~/.config/waybar/scripts/wireless/manage.sh"
+  },
+  "network#ethernet": {
+    "interface": "enp2s0",
+    "format-ethernet": "",
+    "format-disconnected": "",
+    "tooltip-format-ethernet": "{ipaddr}/{cidr} on {ifname}",
+    "tooltip-format-disconnected": "Disconnected",
+    "max-length": 50
+  },
+
+  "custom/vpn": {
+    "exec": "~/.config/waybar/scripts/vpn/status.sh",
+    "return-type": "json",
+    "format": "{icon}",
+    "format-icons": [
+      "󱙱", "󰌾"
+    ],
+    "interval": 10,
+    "on-click": "~/.config/waybar/scripts/vpn/manage.sh"
+  },
+
+  // "memory": {
+  //   "interval": 30,
+  //   "format": "MEM {}% ",
+  //   "max-length": 10
+  // },
+  // "cpu": {
+  //   "interval": 10,
+  //   "format": "CPU {}% ",
+  //   "max-length": 20
+  // },
+
+  "wireplumber": {
+    "on-click": "pavucontrol",
+    "format": "{icon}",
+    "format-icons": [
+      "󰕿", "󰖀", "󰕾"
+    ],
+    "format-muted": "󰝟",
+    "tooltip-format": "{volume}% on [{node_name}]"
+  },
+
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "format-icons": [
+      "", "", "", "", ""
+    ],
+    "states": {
+      "warning": 30,
+      "critical": 15
+    }
+  },
+
+  "clock": {
+    "format": "{:%a, %d. %b  %H:%M}",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode"          : "month",
+      "mode-mon-col"  : 3,
+      "weeks-pos"     : "right",
+      "on-scroll"     : 1,
+      "format": {
+        "months":     "<span color='#ffead3'><b>{}</b></span>",
+        "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+        "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+        "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+      }
+    }
+  },
+
+  "tray": {
+    "icon-size": 21,
+    "spacing": 10
+  }
+}
