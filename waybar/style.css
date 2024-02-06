@@ -54,14 +54,14 @@ tooltip label {
 #battery {
     color: white;
 }
-#battery.charging {
-    color: #06D6A0;
-}
 #battery.warning {
     color: #FFC43D;
 }
 #battery.critical {
     color: #EF476F;
+}
+#battery.charging {
+    color: #06D6A0;
 }
 /* @keyframes blink { */
 /*     to { */
