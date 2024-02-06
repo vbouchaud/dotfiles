@@ -19,7 +19,8 @@
     "custom/microphone",
     "wireplumber",
     "clock",
-    "tray"
+    "tray",
+    "custom/power"
   ],
 
   "sway/window": {
@@ -125,5 +126,12 @@
   "tray": {
     "icon-size": 21,
     "spacing": 10
+  },
+
+  "custom/power": {
+    "format": "⭘",
+    "interval": 60,
+    "on-click": "~/.config/waybar/scripts/power/manage.sh"
   }
+
 }

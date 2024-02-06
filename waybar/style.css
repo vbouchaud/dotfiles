@@ -43,10 +43,10 @@ tooltip label {
 }
 
 /* modules placement and separators */
-#custom-vpn, #network, #cpu, #memory, #clock, #custom-microphone, #wireplumber, #battery, #tray {
+#custom-vpn, #network, #cpu, #memory, #clock, #custom-microphone, #wireplumber, #battery, #tray, #custom-power {
     padding: 2px 13px;
 }
-#custom-vpn, #network, #cpu, #clock, #wireplumber, #battery {
+#custom-vpn, #network, #cpu, #clock, #wireplumber, #battery, #tray {
     border-right: 1px solid rgba(100, 114, 125, 0.5);
 }
 
