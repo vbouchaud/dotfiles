@@ -1,29 +1,39 @@
-image=~/.config/sway/wallpaper/philipp-pilz_fern.jpg
-/* color=#282a36 */
-/* inside-color=#1F202A */
-/* line-color=#1F202A */
-/* ring-color=#bd93f9 */
-/* text-color=#f8f8f2 */
+image=~/.config/sway/wallpaper/philipp-pilz_fern_blured.jpg
 
-/* layout-bg-color=#1F202A */
-/* layout-text-color=#f8f8f2 */
+font="DejaVu Sans Mono"
+font-size=13
 
-/* inside-clear-color=#6272a4 */
-/* line-clear-color=#1F202A */
-/* ring-clear-color=#6272a4 */
-/* text-clear-color=#1F202A */
+indicator-radius=25
+indicator-thickness=8
 
-/* inside-ver-color=#bd93f9 */
-/* line-ver-color=#1F202A */
-/* ring-ver-color=#bd93f9 */
-/* text-ver-color=#1F202A */
+indicator-x-position=40
+indicator-y-position=40
 
-/* inside-wrong-color=#ff5555 */
-/* line-wrong-color=#1F202A */
-/* ring-wrong-color=#ff5555 */
-/* text-wrong-color=#1F202A */
+inside-color=#00000000
+line-color=#2a4546ff
+ring-color=#5c5c5cff
 
-/* bs-hl-color=#ff5555 */
-/* key-hl-color=#50fa7b */
+text-color=#ffffffff
 
-/* text-caps-lock-color=#f8f8f2 */
+layout-bg-color=#2a4546ff
+layout-text-color=#ffffffff
+
+inside-clear-color=#5c5c5c00
+line-clear-color=#2a4546ff
+ring-clear-color=#5c5c5cff
+text-clear-color=#ffffffff
+
+inside-ver-color=#5c5c5c00
+line-ver-color=#2a4546ff
+ring-ver-color=#5c5c5cff
+text-ver-color=#ffffffff
+
+inside-wrong-color=#96000000
+line-wrong-color=#2a4546ff
+ring-wrong-color=#960000ff
+text-wrong-color=#ffffffff
+
+bs-hl-color=#960000ff
+key-hl-color=#072a2eff
+
+text-caps-lock-color=#ffffffff
