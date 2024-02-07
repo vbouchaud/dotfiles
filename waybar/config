@@ -131,7 +131,8 @@
   "custom/power": {
     "format": "⭘",
     "interval": 60,
-    "on-click": "~/.config/waybar/scripts/power/manage.sh"
+    "on-click": "~/.config/waybar/scripts/power/manage.sh",
+    "tooltip": false
   }
 
 }
