@@ -1,19 +1,14 @@
 {
   "modules-left": [
-    "sway/workspaces"
-  ],
-
-  "modules-center": [
+    "sway/workspaces",
     "sway/window"
   ],
 
   "modules-right": [
+    "custom/media",
     "custom/vpn",
     "network#wifi",
     "network#ethernet",
-
-    // "memory",
-    // "cpu",
 
     "battery",
     "custom/microphone",
@@ -26,6 +21,19 @@
   "sway/window": {
     "max-length": 50,
     "toolpip": false
+  },
+
+  "custom/media": {
+    "format": "{icon} {}",
+    "escape": true,
+    "return-type": "json",
+    "max-length": 40,
+    "on-click": "playerctl play-pause",
+    "on-click-right": "playerctl stop",
+    "smooth-scrolling-threshold": 10, // This value was tested using a trackpad, it should be lowered if using a mouse.
+    "on-scroll-up": "playerctl next",
+    "on-scroll-down": "playerctl previous",
+    "exec": "~/.config/waybar/scripts/media/status.py 2> /dev/null", // Script in resources/custom_modules folder
   },
 
   "network#wifi": {
@@ -60,17 +68,6 @@
     "interval": 10,
     "on-click": "~/.config/waybar/scripts/vpn/manage.sh"
   },
-
-  // "memory": {
-  //   "interval": 30,
-  //   "format": "MEM {}% ",
-  //   "max-length": 10
-  // },
-  // "cpu": {
-  //   "interval": 10,
-  //   "format": "CPU {}% ",
-  //   "max-length": 20
-  // },
 
   "custom/microphone": {
     "exec": "~/.config/waybar/scripts/microphone/status.sh",

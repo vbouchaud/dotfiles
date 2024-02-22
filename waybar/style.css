@@ -43,11 +43,15 @@ tooltip label {
 }
 
 /* modules placement and separators */
-#custom-vpn, #network, #cpu, #memory, #clock, #custom-microphone, #wireplumber, #battery, #tray, #custom-power {
+#window, #custom-media, #custom-vpn, #network, #clock, #custom-microphone, #wireplumber, #battery, #tray, #custom-power {
     padding: 2px 13px;
 }
-#custom-vpn, #network, #cpu, #clock, #wireplumber, #battery, #tray {
+#custom-media, #custom-vpn, #network, #clock, #wireplumber, #battery, #tray {
     border-right: 1px solid rgba(100, 114, 125, 0.5);
+}
+#window {
+    margin-left: 13px;
+    border-left: 1px solid rgba(100, 114, 125, 0.5);
 }
 
 /* Battery */
@@ -63,18 +67,3 @@ tooltip label {
 #battery.charging {
     color: #06D6A0;
 }
-/* @keyframes blink { */
-/*     to { */
-/*         background-color: #ffffff; */
-/*         color: black; */
-/*     } */
-/* } */
-/* #battery.warning:not(.charging) { */
-/*     background: #f53c3c; */
-/*     color: white; */
-/*     animation-name: blink; */
-/*     animation-duration: 0.5s; */
-/*     animation-timing-function: linear; */
-/*     animation-iteration-count: infinite; */
-/*     animation-direction: alternate; */
-/* } */
