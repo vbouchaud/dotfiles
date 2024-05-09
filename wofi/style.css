@@ -4,60 +4,60 @@
 }
 
 window {
-margin: 0px;
-border: 2px solid #072a2e;
-background-color: #21242b;
+  margin: 0px;
+  border: 2px solid #072a2e;
+  background-color: #21242b;
 }
 
 #input {
-margin: 5px;
-border: none;
-color: #ffffff;
-background-color: #21242b;
-font-family: monospace;
-font-size: 0.85em;
+  margin: 5px;
+  border: none;
+  color: #ffffff;
+  background-color: #21242b;
+  font-family: monospace;
+  font-size: 0.85em;
 }
 
 #inner-box {
-margin: 5px;
-border: none;
-background-color: #21242b;
+  margin: 5px;
+  border: none;
+  background-color: #21242b;
 }
 
 #outer-box {
-margin: 5px;
-border: none;
-background-color: #21242b;
+  margin: 5px;
+  border: none;
+  background-color: #21242b;
 }
 
 #scroll {
-margin: 0px;
-border: none;
+  margin: 0px;
+  border: none;
 }
 
 #text {
-margin: 5px;
-border: none;
-color: #5c5c5c;
+  margin: 5px;
+  border: none;
+  color: #5c5c5c;
 }
 
 #entry.activatable #text {
-color: #5c5c5c;
+  color: #5c5c5c;
 }
 
 #entry > * {
-color: #5c5c5c;
+  color: #5c5c5c;
 }
 
 #entry:selected {
-background-color: #072a2e;
-border: 1px solid #2a4546;
+  background-color: #072a2e;
+  border: 1px solid #2a4546;
 }
 
 #entry:selected #text {
-color: #ffffff;
+  color: #ffffff;
 }
 
 #entry:selected > * {
-color: #ffffff;
+  color: #ffffff;
 }
