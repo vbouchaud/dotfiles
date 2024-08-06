@@ -37,7 +37,7 @@
   },
 
   "network#wifi": {
-    "interface": "wlp0s20f3",
+    "interface": "wlp4s0",
     "format": "󰤭",
     "format-wifi": "{icon}",
     "format-icons": [
@@ -50,7 +50,7 @@
     "on-click": "~/.config/waybar/scripts/wireless/manage.sh"
   },
   "network#ethernet": {
-    "interface": "enp2s0",
+    "interface": "eth0",
     "format-ethernet": "",
     "format-disconnected": "",
     "tooltip-format-ethernet": "{ipaddr}/{cidr} on {ifname}",
