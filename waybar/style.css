@@ -6,6 +6,7 @@
     font-size: 13px;
     min-height: 0;
 }
+
 window#waybar {
     background: transparent;
     color: #ffffff;
@@ -43,10 +44,10 @@ tooltip label {
 }
 
 /* modules placement and separators */
-#window, #custom-media, #custom-vpn, #network, #clock, #custom-microphone, #wireplumber, #battery, #tray, #custom-power {
+#window, #custom-media, #custom-vpn, #network, #clock, #custom-microphone, #wireplumber, #battery, #custom-keyboard, #tray, #custom-power {
     padding: 2px 13px;
 }
-#custom-media, #custom-vpn, #network, #clock, #wireplumber, #battery, #tray {
+#custom-media, #custom-vpn, #network, #clock, #wireplumber, #battery, #custom-keyboard, #tray {
     border-right: 1px solid rgba(100, 114, 125, 0.5);
 }
 #window {

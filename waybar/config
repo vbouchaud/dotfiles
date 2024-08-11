@@ -15,12 +15,13 @@
     "wireplumber",
     "clock",
     "tray",
+    "custom/keyboard",
     "custom/power"
   ],
 
   "sway/window": {
     "max-length": 50,
-    "toolpip": false
+    "tooltip": false
   },
 
   "custom/media": {
@@ -67,6 +68,15 @@
     ],
     "interval": 10,
     "on-click": "~/.config/waybar/scripts/vpn/manage.sh"
+  },
+
+  "custom/keyboard": {
+    "exec": "~/.config/waybar/scripts/keyboard/status.sh",
+    "return-type": "json",
+    "format": "⌨",
+    "interval": 1,
+    "on-click": "~/.config/waybar/scripts/keyboard/manage.sh",
+    "tooltip-format": "{}"
   },
 
   "custom/microphone": {
