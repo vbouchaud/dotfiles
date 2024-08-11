@@ -1,0 +1,3 @@
+profile nomad {
+    output "BOE 0x0BC9 Unknown" enable
+}

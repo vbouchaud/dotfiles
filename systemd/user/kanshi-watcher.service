@@ -1,0 +1,9 @@
+[Unit]
+Description=Kanshi reloader
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/kanshictl reload
+
+[Install]
+WantedBy=graphical-session.target

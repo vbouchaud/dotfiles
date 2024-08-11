@@ -1,0 +1,5 @@
+[Path]
+PathChanged=%h/.config/kanshi/
+
+[Install]
+WantedBy=graphical-session.target
