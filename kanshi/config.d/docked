@@ -1,8 +1,34 @@
 profile docked {
     output "Samsung Electric Company Odyssey G95SC H1AK500000" {
-        mode 3840x1080
+        mode 5120x1440
         position 0,0
     }
 
     output "BOE 0x0BC9 Unknown" disable
+}
+
+profile docked-shared-right {
+    output "Samsung Electric Company Odyssey G95SC H1AK500000" {
+        mode 5120x1440
+        position 0,0
+    }
+
+    output "BOE 0x0BC9 Unknown" {
+        mode 2560x1600
+        position 2560,0
+        enable
+    }
+}
+
+profile docked-shared-left {
+    output "Samsung Electric Company Odyssey G95SC H1AK500000" {
+        mode 5120x1440
+        position 2561,0
+    }
+
+    output "BOE 0x0BC9 Unknown" {
+        mode 2560x1600
+        position 0,0
+        enable
+    }
 }
