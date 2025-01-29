@@ -25,7 +25,7 @@
   },
 
   "custom/media": {
-    "format": "{icon} {}",
+    "format": "{icon} {0}",
     "escape": true,
     "return-type": "json",
     "max-length": 40,
