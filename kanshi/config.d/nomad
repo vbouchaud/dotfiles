@@ -1,3 +1,17 @@
 profile nomad {
     output "BOE 0x0BC9 Unknown" enable
 }
+
+profile nomad-dualhead {
+    output "GWD ARZOPA 000000000000" {
+        mode 1920x1080
+        position 0,0
+        enable
+    }
+
+    output "BOE 0x0BC9 Unknown" {
+        mode 2560x1600
+        position 1921,0
+        enable
+    }
+}
