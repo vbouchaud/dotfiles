@@ -1,6 +1,6 @@
 [screencast]
-chooser_type=dmenu
-chooser_cmd=wofi --show dmenu --prompt share
+chooser_type=simple
+chooser_cmd=slurp -f %o -or -B '#1e1e1ebb'
 exec_before=makoctl mode -a do-not-disturb
 exec_after=makoctl mode -r do-not-disturb
 max_fps=30
